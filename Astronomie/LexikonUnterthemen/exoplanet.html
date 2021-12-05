@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="de">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>AstroWorld | Exoplanet</title>
+
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+	<nav>
+	  <input type="checkbox" id="check">
+	  <label for="check" class="checkbtn">
+		<i class="fas fa-bars"></i>
+	  </label>
+	  <label class="logo">Lexikon</label>
+	  <ul>
+<li><a class="active" href="https://astrodude23342.github.io/astroworld">Home</a></li>
+<li><a href="https://astrodude23342.github.io/astroworld/Astronomie/astronomie.html">Astronomie</a></li>
+<li><a href="https://astrodude23342.github.io/astroworld/Astronomie/lexikon.html">Lexikon</a></li>
+</ul>
+</nav>
+<br>
+
+<div class="secondheader">
+
+<h2>Was ist ein Exoplanet?</h2>
+
+</div>
+
+<br>
+
+<div class="text">
+<p><big>Exoplanet:</big></p><br>
+<p>Ein Exoplanet, auch extrasolarer Planet, ist ein Planet der nicht unter dem gravitativen Einfluss der Sonne steht, sondern unter dem Einfluss eines anderen Sternes.</p>
+
+</div>
+
+<br>
+
+<div class="othertext">
+<big>Nachweismethoden:</big>
+<br>
+<br>
+<h3>Radialgeschwindigkeitsmethode</h3>
+<p>Die meisten Exoplaneten wurden mit dieser Methode entdeckt. Mit einem sehr genauen Spektrometer kann man den Doppler-Effekt im Licht der Sterne messen. Es gibt einen Massemittelpunkt von Stern und Planet, um den sich der Stern bewegt. Dadurch entsteht der Doppler-Effekt. Ein periodisch sich wiederholendes Signal deutet auf einen Planeten hin (Periode= Umlaufzeit des Planeten um den Stern).</p>
+
+</div>
+
+<div class="othertext">
+
+
+<h3>Pulsar Timing</h3>
+
+<p>Die ersten Exoplaneten wurden 1992 mit dieser Methode erspäht (PSR 1257+12 A, PSR 1257+12 B, PSR 1257+12 C). Für diese Methode muss man die regelmässigen Impulse eines Pulsars (eines schnell rotierenden Neutronensterns) messen. Kleine Abweichungen der Impulse deuten auf einen Exoplaneten hin. Der Fokus der Astronomen hat sich jedoch von dieser Methode wegbewegt, da Pulsare Ueberbleibsel von einer Sternenexplosion sind und nicht zu vergleichen mit Sternen wie unserer Sonne.</p>
+
+</div>
+
+
+<div class="othertext">
+
+<h3>Direkte Beobachtung</h3>
+<p>Bei dieser Methode wird ein Foto von einem neu entdeckten Exoplaneten. Der erste Planet der durch diese Methode gefunden wurde, wurde 2004 gefunden (2M1207 b). In dieser Zeit wurden mehrere Exoplaneten und Planetensysteme durch diese Methode erfolgreich entdeckt. Jedoch sind die meisten Planeten sehr jung, sehr schwer und weit von ihrem Stern entfernt (mehrere hundert Astronomische Einheiten).</p>
+
+</div>
+
+
+<div class="othertext">
+
+<h3>Transitmethode</h3>
+<p>Mit dieser Methode wurden in den letzten Jahren viele neue Exoplaneten gefunden. Auch zwei sehr bekannte Weltraumteleskope (Kepler und CoRoT) benutzen diese Methode um Exoplaneten zu erspähen. Das Sternenlicht wird etwas dunkler, wenn sich der Exoplanet zwischen seinem Stern und unserer Erde steht. Zusammen mit der Radialgeschwindigkeitsmethode kann man auch die Dichte der Planeten messen</p>
+
+</div>
+
+<br>
+
+<div class="footer">
+
+<p>|/|\| AstroWorld |/|\|</p>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+nav{
+  background:#000099;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 33px;
+  line-height: 80px;
+  padding: 0 140px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+nav ul{
+  float: right;
+  margin-right: 60px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 2px;
+}
+nav ul li a{
+  color: #00FC85;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  /* text-transform: uppercase; */
+  font-family: 'Poppins', sans-serif;
+}
+a.active,a:hover{
+  background:#1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+	font-size: 27px;
+	padding-left: 25px;
+  }
+  nav ul li a{
+	font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+	display: block;
+	margin-right: 40px;
+  }
+  ul{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #262626;
+	top: 80px;
+	left: -100%;
+	text-align: center;
+	transition: all .5s;
+  }
+  nav ul li{
+	display: block;
+	margin: 50px 0;
+	line-height: 30px;
+  }
+  nav ul li a{
+	font-size: 20px;
+  }
+  a:hover,a.active{
+	background:none;
+	color:white;
+  }
+  #check:checked ~ ul{
+	left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+.secondheader {
+
+background-color:#e22400;
+color:white;
+text-align:center;
+padding:40px 40px;
+font-family: 'Poppins';
+
+}
+
+.text {
+
+background:#7AC5CD;
+color:white;
+text-align:center;
+padding:40px 40px;
+font-family: 'Poppins';
+
+}
+
+.othertext {
+
+background:#7AC5CD;
+color:white;
+text-align:center;
+padding:40px 40px;
+font-family: 'Poppins';
+
+}
+
+
+.footer {
+
+background:#7AC5CD;
+color:white;
+text-align:center;
+padding:auto;
+
+}
+
+big {
+
+font-size:30px;
+
+}
+
+h3 {
+
+font-size:20px;
+
+}
+
+p {
+
+font-size:15px;
+
+}
+
+</style>
+
+</html>
