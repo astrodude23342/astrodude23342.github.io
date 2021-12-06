@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "index.html"
+AuthUserFile astroworld.htpasswd
+Require valid-user
