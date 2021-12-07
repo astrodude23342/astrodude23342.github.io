@@ -6,22 +6,13 @@
 function validateForm() {
   let x = document.forms["myForm"]["username"].value;
   let y = document.forms["myForm"]["passwort"].value;
-  if (x == "") {
-    alert("Username muss ausgefüllt werden!");
-    return false;
-  }
-
-    if (y == "") {
-      alert("Passwort muss ausgefüllt werden!");
-      return false;
-    }
 
     if ((x=="AstroUser23342") && (y=="220208")) {
       alert("Du wirst zur Website weitergeleitet...");
       return true;
     }
     else {
-      alert("Falscher Username oder falsches Passwort.")
+      alert("Falscher Username oder falsches Passwort!")
       return false;
     }
   }
