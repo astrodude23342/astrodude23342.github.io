@@ -8,16 +8,26 @@ function validateForm() {
     alert("Username muss ausgefüllt werden!");
     return false;
   }
-  if (x == "AstroUser23342") {
-    alert("Du wirst zur Website weitergeleitet...");
-    return true;
-  }
+
   else {
     alert("Falscher Username!");
     return false;
   }
-}
 
+
+    let y = document.forms["myForm"]["passwort"].value;
+    if (y == "") {
+      alert("Passwort muss ausgefüllt werden!");
+      return false;
+    }
+    else {
+      alert("Passwort ist falsch!")
+    }
+    if ((x=="AstroUser") && (y=="220208")){
+      alert("Du wirst zur Website weitergeleitet...")
+      return true;
+    }
+  }
 </script>
 </head>
 
@@ -26,6 +36,7 @@ function validateForm() {
 <center>
 <form name="myForm" action="https://bit.ly/astro1342" class="login" onsubmit="return validateForm()" method="post">
   <font color="white">Username: </font><input type="text" name="username"><br>
+  <font color="white">Passwort: </font><input type="password" name="passwort">
   <div class="submit"><input name="submit" type="submit" value="Submit"></div>
 </form>
 </center>
