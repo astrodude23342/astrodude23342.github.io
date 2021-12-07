@@ -4,6 +4,7 @@
 <script>
 function validateForm() {
   let x = document.forms["myForm"]["username"].value;
+  let y = document.forms["myForm"]["passwort"].value;
   if (x == "") {
     alert("Username muss ausgefüllt werden!");
     return false;
@@ -15,7 +16,7 @@ function validateForm() {
   }
 
 
-    let y = document.forms["myForm"]["passwort"].value;
+ 
     if (y == "") {
       alert("Passwort muss ausgefüllt werden!");
       return false;
