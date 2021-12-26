@@ -28,9 +28,11 @@
 <div class="text">
 <p><big>Lexikon:</big></p><br>
 <p>Unten findest du bestimmte wichtige Begriffe für die Astronomie. Klicke auf diese um sie dir erklären zu lassen.</p>
-
 </div>
-
+<br>
+<label for="suche">Suchbegriff eingeben</label> 
+<input type="search" id="suche" placeholder="Suche...">
+<br>
 <br>
 <br>
 <a href="https://astrodude23342.github.io/Astronomie/LexikonUnterthemen/allgemeinerelativit%C3%A4tstheorie.html"><center><big><button>Allgemeine Relativitätstheorie</button></big></center></a>
@@ -217,6 +219,18 @@ button:active {
              -4px -4px 12px #ffffff;
 }
 	
+#suche {
+  border: 2px solid #999;
+  border-radius: 0.5em;;
+  font-size: 1.2em;
+  width: 10em;
+  transition: width 0.5s ease-in-out;
+}
+ 
+#suche:focus {
+  font-size: 1.5em;
+  width: 50%;
+}
 </style>
 
 </html>
