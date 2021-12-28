@@ -31,6 +31,7 @@
 <br>
 <br>
 <p id="factOutput"></p>
+<p><small>Es gibt bisher <span id="fakten"></span> Fakten</small></p>
 </div>
 
 <br>
@@ -235,6 +236,7 @@ button:active {
 
 <script>
 
+var facts = arrayOfFacts.length 
 const arrayOfFacts = [
     {
      'fact': 'Die Erde ist der einzige Planet in unserem Sonnensystem, der nicht nach einem Gott benannt ist.'
@@ -294,6 +296,9 @@ const arrayOfFacts = [
      'fact': 'Ein Tag auf der Venus ist länger als ein Jahr auf der Venus.'
     }
     ];
+
+    document.getElementById("fakten").innerHTML = facts;
+
 
 function generateFact(){
     const random = Number.parseInt(Math.random()*arrayOfFacts.length + 1);
