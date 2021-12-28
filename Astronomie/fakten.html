@@ -261,6 +261,7 @@ function generateFact(){
     document.querySelector('#factOutput').textContent = `\"${arrayOfFacts[random].fact}\"`;
 
     var pickedFactOutput = factOutput;
+    var previousFactOutput = previousFactOutput;
 if (previousFactOutput === false) { // never picked anything before
   pickedFactOutput = Math.floor(Math.random() * arr.length);
 }
