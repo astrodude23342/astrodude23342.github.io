@@ -25,13 +25,13 @@
 <br>
 
 <div class="text">
-<p><big>Fakten</big></p><br>
+<p><big>Fakten*</big></p><br>
 <button onclick="generateFact()";>Zufälliger Fakt</button>
 <br>
 <br>
 <br>
 <p id="factOutput"></p>
-<p><small>Es gibt bisher <span id="fakten"></span> Fakten</small></p>
+<p><small>*Es gibt bisher 19 Fakten. Es kann sein, dass manchmal zwei gleiche Fakten hintereinander kommen, dann einfach nochmal klicken.</small></p>
 </div>
 
 <br>
@@ -236,7 +236,6 @@ button:active {
 
 <script>
 
-var facts = arrayOfFacts.length 
 const arrayOfFacts = [
     {
      'fact': 'Die Erde ist der einzige Planet in unserem Sonnensystem, der nicht nach einem Gott benannt ist.'
@@ -296,8 +295,6 @@ const arrayOfFacts = [
      'fact': 'Ein Tag auf der Venus ist länger als ein Jahr auf der Venus.'
     }
     ];
-
-    document.getElementById("fakten").innerHTML = facts;
 
 
 function generateFact(){
