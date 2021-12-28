@@ -259,18 +259,6 @@ const arrayOfFacts = [
 function generateFact(){
     const random = Number.parseInt(Math.random()*arrayOfFacts.length + 1);
     document.querySelector('#factOutput').textContent = `\"${arrayOfFacts[random].fact}\"`;
-
-    var pickedFactOutput = factOutput;
-    var previousFactOutput = previousFactOutput;
-if (previousFactOutput === false) { // never picked anything before
-  pickedFactOutput = Math.floor(Math.random() * arr.length);
-}
-else {
-  pickedFactOutput = Math.floor(Math.random() * (arr.length - 1));
-  if (pickedFactOutput >= previousFactOutput) pickedFactOutput += 1;
-}
-previousFactOutput = pickedFactOutput;
-arr[pickedFactOutput]();
 }
 
 </script>
