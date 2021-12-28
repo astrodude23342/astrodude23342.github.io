@@ -27,14 +27,13 @@
 
 <div class="text">
 <p><big>Header</big></p><br>
-<button onclick="generateQuote();">New Quote</button>
+<button onclick="generateQuote();">Zufälliger Fakt</button>
 <p id="quoteOutput"></p>
 </div>
 
 <br>
 <br>
 <br>
-<a href="https://astrodude23342.github.io/astroworld.html"><center><big><button>if button</button></big></center></a>
 <br>
 <br>
 <br>
@@ -234,30 +233,30 @@ button:active {
 
 <script>
 
-const arrayOfQuotes = [
-    {'author': 'Jim Rohn', 
-     'quote': 'Beware of what you become in pursuit of what you want.'
+const arrayOfFacts = [
+    {
+     'fact': 'Das Weltall ist dunkel'
     },
-    {'author': 'Epictetus', 
-     'quote': 'It\'s not what happens to you, but how you react to it that matters.'
+    { 
+     'fact': 'Sterne sind hell'
     },
-    {'author': 'Frank Sinatra', 
-     'quote': 'The best revenge is massive success.'
+    { 
+     'fact': 'Die Erde hat einen Mond'
     },
-    {'author': 'Wayne Gretzy', 
-     'quote': 'You miss 100% of the shots you don\'t take.'
+    {
+     'fact': 'Ich bin dumm'
     },
-    {'author': 'Nelson Mandela', 
-     'quote': 'Resentment is like drinking poison and waiting for your enemies to die.'
+    {
+     'fact': 'Die Erde ist rund'
     },
-    {'author': 'Elbert Hubbard', 
-     'quote': 'Do not take life too seriously. You will not get out alive.'
+    {
+     'fact': 'Test'
     },
 ];
 
-function generateQuote(){
-    const random = Number.parseInt(Math.random()*arrayOfQuotes.length + 1);
-    document.querySelector('#quoteOutput').textContent = `\"${arrayOfQuotes[random].quote}\"`;
+function generateFact(){
+    const random = Number.parseInt(Math.random()*arrayOfFacts.length + 1);
+    document.querySelector('#factOutput').textContent = `\"${arrayOfFacts[random].quote}\"`;
     
 }
 
