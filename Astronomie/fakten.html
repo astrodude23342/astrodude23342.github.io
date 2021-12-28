@@ -258,7 +258,7 @@ const arrayOfFacts = [
 
 function generateFact(){
     const random = Number.parseInt(Math.random()*arrayOfFacts.length + 1);
-    document.querySelector('#factOutput').textContent = `\${arrayOfFacts[random].fact}\`;
+    document.querySelector('#factOutput').textContent = `\"${arrayOfFacts[random].fact}\"`;
     
 }
 
